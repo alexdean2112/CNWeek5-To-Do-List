@@ -3,20 +3,69 @@
   margin: 0;
 }
 
+body {
+  background-color: #121212;
+}
+
 .topcontainer {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .topcontainer input {
   margin-right: 10px;
+  padding: 5px;
+  border: 3px solid black;
+  font-weight: bold;
+  font-size: 15px;
+  color: #B3B3B3;
+  background-color: #404040;
+}
+
+.itemText input {
+  border: none;
+  padding: 5px;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #B3B3B3;
+  background-color: #404040;
+
+}
+
+.item {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.topcontainer button {
+  padding: 5px;
+  border: 3px solid black;
+  font-size: 15px;
+  font-weight: bold;
+  color: #B3B3B3;
+  background-color: #404040;
 }
 
 .maintitle {
   display: flex;
   justify-content: center;
   text-decoration: underline;
+  color: #ffffff;
+}
+
+.header {
+  border: 3px solid black;
+  margin: 20px 30vw;
+  padding: 20px 10px;
+  background-color: #404040;
+}
+
+.header p {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: #B3B3B3;
 }
 
 .todocontainer {
@@ -26,7 +75,10 @@
 
 .container {
   width: 30vw;
+  height: 50vh;
   margin-top: 20px;
+  border: 3px solid black;
+  background-color: #404040;
 }
 
 .item {
@@ -40,17 +92,38 @@
   justify-content: baseline;
 }
 
-.item img {
-  width: 20px;
+.itemText p {
+  font-weight: bold;
+}
+
+.itemImage {
+  display: flex;
+  align-items: center;
 }
 
 .item p {
   margin-left: 20px;
-  text-transform: capitalize;
+  color: #B3B3B3;
 }
 
 .container h2 {
   display: flex;
   justify-content: center;
   text-decoration: underline;
+  color: #ffffff;
+}
+
+.quill {
+  width: 28px;
+  margin-right: 3px;
+}
+
+.arrow {
+  width: 23px;
+  margin-right: 5px;
+}
+
+.dustbin {
+  width: 20px;
+  margin-right: 5px;
 }
