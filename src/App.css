@@ -1,3 +1,5 @@
+/* Global styling */
+
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +8,8 @@
 body {
   background-color: #121212;
 }
+
+/* Top container styling */
 
 .topcontainer {
   display: flex;
@@ -22,6 +26,15 @@ body {
   background-color: #404040;
 }
 
+.topcontainer button {
+  padding: 5px;
+  border: 3px solid black;
+  font-size: 15px;
+  font-weight: bold;
+  color: #B3B3B3;
+  background-color: #404040;
+}
+
 .itemText input {
   border: none;
   padding: 5px;
@@ -31,20 +44,6 @@ body {
   color: #B3B3B3;
   background-color: #404040;
 
-}
-
-.item {
-  padding: 5px;
-  font-size: 15px;
-}
-
-.topcontainer button {
-  padding: 5px;
-  border: 3px solid black;
-  font-size: 15px;
-  font-weight: bold;
-  color: #B3B3B3;
-  background-color: #404040;
 }
 
 .maintitle {
@@ -68,6 +67,8 @@ body {
   color: #B3B3B3;
 }
 
+/* Styling for the to-do boxes */
+
 .todocontainer {
   display: flex;
   justify-content: space-evenly;
@@ -84,21 +85,28 @@ body {
 .item {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 15px 0;
+  font-size: 15px;
 }
 
 .itemText {
   display: flex;
   justify-content: baseline;
+  width: 20vw;
 }
 
 .itemText p {
   font-weight: bold;
 }
 
+.itemText p input {
+  width: 19vw;
+}
+
 .itemImage {
   display: flex;
   align-items: center;
+  width: 6vw;
 }
 
 .item p {
@@ -113,6 +121,8 @@ body {
   color: #ffffff;
 }
 
+/* Icon styling */
+
 .quill {
   width: 28px;
   margin-right: 3px;
@@ -126,4 +136,36 @@ body {
 .dustbin {
   width: 20px;
   margin-right: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .item {
+    flex-direction: column;
+  }
+
+  .itemText {
+    flex-direction: column;
+  }
+
+  .itemImage {
+    margin-left: 20px;
+  }
+
+  .todocontainer { 
+    flex-direction: column;
+  }
+
+  .container {
+    width: 80vw;
+    height: 50vh;
+    margin-top: 20px;
+    margin-left: 10vw;
+    border: 3px solid black;
+    background-color: #404040;
+  }
+
+  .header {
+    width: 80vw;
+    margin: 10px 10vw;
+  }
 }

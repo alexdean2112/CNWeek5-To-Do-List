@@ -100,19 +100,19 @@ const Todo = () => {
                     {doneItems.map((item, index) => {
                         return (
                             <div className="item">
-                            <div className="itemText">
-                                <p key={index} >{index+1}</p>
-                                <p><input type="text" defaultValue={item} disabled={textEdit} id={item}/></p>
+                                <div className="itemText">
+                                    <p key={index} >{index+1}</p>
+                                    <p><input type="text" defaultValue={item} disabled={textEdit} id={item}/></p>
+                                </div>
+                                <div className="itemImage">
+                                <img src={dustbin} onClick={ () => deleteItemDone(index)} className="dustbin"/>
+                                </div>
                             </div>
-                            <div className="itemImage">
-                            <img src={dustbin} onClick={ () => deleteItemDone(index)} className="dustbin"/>
-                            </div>
-                        </div>
                         )
                     })}
+                </div>
             </div>
         </div>
-    </div>
     )
 }
 
